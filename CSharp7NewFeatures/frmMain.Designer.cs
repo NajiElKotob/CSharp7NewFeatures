@@ -30,6 +30,7 @@
         {
             this.btnBinaryLiterals_DigitSeparators = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnTuples = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnBinaryLiterals_DigitSeparators
@@ -51,11 +52,22 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "C# 7.0 adds a lot of small useful features that can clean up your code. ";
             // 
+            // btnTuples
+            // 
+            this.btnTuples.Location = new System.Drawing.Point(15, 85);
+            this.btnTuples.Name = "btnTuples";
+            this.btnTuples.Size = new System.Drawing.Size(209, 35);
+            this.btnTuples.TabIndex = 4;
+            this.btnTuples.Text = "Tuples";
+            this.btnTuples.UseVisualStyleBackColor = true;
+            this.btnTuples.Click += new System.EventHandler(this.btnTuples_Click);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(632, 320);
+            this.Controls.Add(this.btnTuples);
             this.Controls.Add(this.btnBinaryLiterals_DigitSeparators);
             this.Controls.Add(this.label1);
             this.Name = "frmMain";
@@ -70,5 +82,6 @@
 
         private System.Windows.Forms.Button btnBinaryLiterals_DigitSeparators;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnTuples;
     }
 }
